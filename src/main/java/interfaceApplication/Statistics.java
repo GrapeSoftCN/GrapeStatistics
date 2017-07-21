@@ -7,14 +7,13 @@ import database.DBHelper;
 import security.codec;
 
 public class Statistics {
-	private static String DBName;
-	private static JSONObject authDB;
-	static {
+	private String DBName;
+	private JSONObject authDB;
+
+	public Statistics() {
 		DBName = "mongodb";
 		authDB = new JSONObject();
-		;
 	}
-
 	public String insert(String authCode, String tableName, String data) {
 		int rb = 0;
 		DBHelper db = new DBHelper(DBName, tableName);
