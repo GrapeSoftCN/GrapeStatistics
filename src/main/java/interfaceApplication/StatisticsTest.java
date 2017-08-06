@@ -189,9 +189,10 @@ public class StatisticsTest {
 		}
 		if (rtid.length() > 0) {
 			rtid = StringHelper.fixString(rtid, ',');
-			String temp = appsProxy.proxyCall(getHost(0), appsProxy.appid() + SDKUrl + rtid, null, null)
-					.toString();
-			JSONObject tempObj = JSONObject.toJSON(temp);
+//			String temp = appsProxy.proxyCall(getHost(0), appsProxy.appid() + SDKUrl + rtid, null, null)
+//					.toString();
+//			JSONObject tempObj = JSONObject.toJSON(temp);
+			JSONObject tempObj = null;
 			if (tempObj != null) {
 				for (int i = 0; i < l; i++) {
 					object = (JSONObject) array.get(i);

@@ -14,7 +14,6 @@ public class StatisticsModel {
 	}
 
 	public db bind(String tableName) {
-		nlogger.logout("appid");
 		return getdb(tableName).bind(appid);
 	}
 }
